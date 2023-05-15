@@ -1,0 +1,329 @@
+/* -------navbar------- */
+
+.navbar {
+    background-color: #2d3032;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 9999;
+    opacity: 0.5;
+    text-align: right;
+    padding-right: 1%;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar ul li a:hover{
+    color: whitesmoke;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .navbar li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #AEBAC2;
+  }
+  /* .bg{
+    background-image: url("images/background5.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: center center;
+    margin: 0%;
+} */
+
+
+body {
+    background-color: black;
+    color:whitesmoke;
+    margin: 0%;
+    align-content: center;
+}
+
+/* -----introduction------ */
+
+
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.all{
+  z-index: 1;
+}
+
+
+.fa {
+    display: inline-block;
+    font-size: 24px;
+    font-size: 24px;
+    margin: 0 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-github,
+.fa-instagram {
+    color: black
+}
+
+.fa:hover{
+    background-color: black;
+    color:whitesmoke;
+}
+
+
+span {
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+.tag {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* -------about me------- */
+
+.aboutme{
+    padding-top: 2%;
+    text-align: center;
+}
+
+p{  
+     margin: auto;
+     padding-left: 20%;
+     padding-right: 20%;
+}
+
+/* -------skills------ */
+
+.skills {
+
+    padding-top: 2%;
+    text-align: center;
+  }
+  
+  .skills .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .skills .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills .col-6 {
+    flex: 1;
+    padding: 0 16px;
+  }
+  
+  .skills .skill li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .skills .skill li em {
+    margin-left: 8px;
+  }
+  
+  .skills .skill li span {
+    display: block;
+    height: 16px;
+    border-radius: 8px;
+  }
+  
+  .skills .skill li .html {
+    background-color: #cd9689;
+    width: 80%;
+  }
+  
+  .skills .skill li .css {
+    background-color: #a8ad71;
+    width: 60%;
+  }
+  
+  .skills .skill li .javascript {
+    background-color: #729d83;
+    width: 50%;
+  }
+  
+  .skills .skill li .python {
+    background-color: #6e879c;
+    width: 60%;
+  }
+  
+  .skills .skill li .sql {
+    background-color: #8dd1a8;
+    width:50% ;
+  }
+  
+  .skills .skill li .cpp {
+    background-color: #c19abb;
+    width: 50%
+  }
+  
+  h3{
+    color: rgb(77, 147, 232);
+    text-align: center;
+  }
+
+h4{
+    color:rgb(224, 208, 145);
+    text-align: center;
+}
+
+/*------ project----- */
+
+.project{
+    padding-top: 2%;
+}
+.description{
+    text-align: center;
+    justify-content: center
+}
+
+
+/* ------interest----- */
+
+.interest{
+    padding-top: 2%;
+}
+
+  .interesticons {
+    text-align: center;
+  }
+  
+  .iicon {
+    display: inline-block;
+    background-color: black;
+    padding: 1%;
+    border-radius: 30%;
+    margin: 1%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .iicon i{
+    font-size: 150%;
+    font-size: 48px;
+    color: whitesmoke;
+  }
+  
+  .icon-text {
+    color:white;
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+   
+  .iicon i:hover{
+    color: rgb(180, 180, 163);
+
+  }
+
+  .iicon:hover {
+    transform: scale(1.2);
+  }
+
+
+  p{
+    opacity: 0;
+    animation: slide-up 1s forwards;
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+ 
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .icon, .iicon {
+    animation: bounce 2s;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
